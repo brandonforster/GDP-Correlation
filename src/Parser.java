@@ -1,5 +1,5 @@
 //Brandon Forster, Robert Millward,
-//Matt Head
+//Matt Bald
 //COP 3503 Extra Credit Assignment
 //Huffman Encoding and Decoding
 //3 December 2012
@@ -23,7 +23,10 @@ public class Parser {
 		//start reading in the whole input
 		while (xlIn.hasNext() == true)
 		{
-			
+			int weoCountryCode = xlIn.nextInt();
+			String ISO= xlIn.next();
+			String weoSubjectCode = xlIn.next();
+			String country = xlIn.next();
 		}
 	}
 	

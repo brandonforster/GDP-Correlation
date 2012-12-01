@@ -1,4 +1,4 @@
-  Brandon Forster, Robert Millward, and Matthew Head
+  Brandon Forster, Robert Millward, and Matthew Bald
 
 COP 3503 Extra Credit Assignment
 
