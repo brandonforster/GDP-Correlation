@@ -19,6 +19,9 @@ public class Parser {
 		//this method call throws the FileNotFound
 		Scanner xlIn = new Scanner(xlsFile);
 		
+		//this will store our countries.
+		ArrayList<Country> countries = new ArrayList<Country>();
+		
 		//eat the first line of input until we get to the main input
 		xlIn.nextLine();
 		
@@ -68,6 +71,18 @@ public class Parser {
 			}
 			
 			int estStartYear = xlIn.nextInt();
+			
+			//make a new country object from the data
+			Country c = new Country(
+					weoCountryCode,
+					ISO,
+					weoSubjectCode,
+					country,
+					values,
+					estStartYear);
+			
+			//add the new country to the array list.
+			countries.add(c);
 		}
 		
 		xlIn.close();
