@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //Brandon Forster, Robert Millward,
 //Matt Bald
 //COP 3503 Extra Credit Assignment
@@ -7,26 +9,21 @@
 
 public class Country {
 	
-	private int 		weoCountryCode;
-	private String 		iso;
-	private String 		weoSubjectCode;
-	private String 		name;
-	private double[]	values;
-	private int			estStartYear;
+	private int 				weoCountryCode;
+	private String 				iso;
+	private String 				name;
+	private ArrayList<Subject>	subjects;
 
 	public Country(
-			int 		weoCountryCode,
-			String 		iso,
-			String		weoSubjectCode,
-			String 		name,
-			double[]	values,
-			int			estStartYear)
+			int 				weoCountryCode,
+			String 				iso,
+			String 				name,
+			double[]			values,
+			ArrayList<Subject>	subjects)
 	{
 		this.weoCountryCode = weoCountryCode;
 		this.iso			= iso;
-		this.weoSubjectCode = weoSubjectCode;
 		this.name			= name;
-		this.values			= values;
-		this.estStartYear	= estStartYear;
+		this.subjects		= subjects;
 	}
 }
