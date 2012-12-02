@@ -18,7 +18,6 @@ public class Country {
 			int 				weoCountryCode,
 			String 				iso,
 			String 				name,
-			double[]			values,
 			ArrayList<Subject>	subjects)
 	{
 		this.weoCountryCode = weoCountryCode;

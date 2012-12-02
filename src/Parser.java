@@ -72,14 +72,22 @@ public class Parser {
 			
 			int estStartYear = xlIn.nextInt();
 			
-			//make a new country object from the data
+			//make a new Subject from the data
+			Subject s = new Subject(
+					weoSubjectCode,
+					values,
+					estStartYear);
+			
+			ArrayList<Subject> subjects = new ArrayList<Subject>();
+			
+			subjects.add(s);
+			
+			//make a new Country object from the data
 			Country c = new Country(
 					weoCountryCode,
 					ISO,
-					weoSubjectCode,
 					country,
-					values,
-					estStartYear);
+					subjects);
 			
 			//add the new country to the array list.
 			countries.add(c);
